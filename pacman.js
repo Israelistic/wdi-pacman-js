@@ -80,13 +80,24 @@ function processInput(key) {
     case '\u0003': // This makes it so CTRL-C will quit the program
     case 'q':
       process.exit();
-      break;
     case 'd':
       eatDot();
-      break;
-     case 'e':
+    break;
+    case '1':
+      eatInky()
+    break;
+    case '2':
+      eatBlinky()
+    break;
+    case '3':
+      eatPinky()
+    break;
+    case '4':
+    eatClyde()
+    break;
+    case 'e':
      eatFruit();
-     break;
+    break;
     default:
       console.log('\nInvalid Command!');
   }
