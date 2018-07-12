@@ -4,6 +4,35 @@ var lives = 2;
 
 
 // Define your ghosts here
+var inky = {
+  'menu_option': '1',
+  'name': 'Inky',
+  'colour': 'Red',
+  'character': 'Shadow',
+  'edible': false
+};
+var blinky = {
+  'menu_option': '1',
+  'name': 'blinky',
+  'colour': 'Cyan',
+  'character': 'Speedy',
+  'edible': false
+};
+var pinky = {
+  'menu_option': '1',
+  'name': 'pinky',
+  'colour': 'Pink',
+  'character': 'Bashful',
+  'edible': false
+};
+var clyde = {
+  'menu_option': '1',
+  'name': 'Clyde',
+  'colour': 'Orange',
+  'character': 'Pokey',
+  'edible': false
+};
+var ghosts =[inky, blinky, pinky, clyde]
 
 // replace this comment with your four ghosts setup as objects
 
@@ -55,6 +84,9 @@ function processInput(key) {
     case 'd':
       eatDot();
       break;
+     case 'e':
+     eatFruit();
+     break;
     default:
       console.log('\nInvalid Command!');
   }
